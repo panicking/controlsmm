@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/controls/">
+    <file>assets/wifi-no-connection.svg</file>
+    <file>assets/wifi-signal-0.svg</file>
+    <file>assets/wifi-signal-2.svg</file>
+    <file>assets/wifi-signal-4.svg</file>
+    <file>assets/wifi-no-signal.svg</file>
+    <file>assets/wifi-signal-1.svg</file>
+    <file>assets/wifi-signal-3.svg</file>
+  </gresource>
+</gresources>
