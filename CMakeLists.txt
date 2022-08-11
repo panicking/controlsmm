@@ -4,12 +4,15 @@ project(controlsmm VERSION 1.0)
 set(LIBRARY_NAME controls)
 
 list(INSERT CMAKE_MODULE_PATH 0 ${PROJECT_SOURCE_DIR}/cmake)
+
 set(GENERATED_FILES_DIR ${PROJECT_BINARY_DIR}/generated)
 set(GENERATED_DATA_DIR ${GENERATED_FILES_DIR}/data)
 
 set(GRESOURCE_FILE ${GENERATED_DATA_DIR}/${LIBRARY_NAME}.gresource.xml)
 
-find_package(GTKMM)
+if (NOT TARGET GTKMM)
+    find_package(GTKMM)
+endif()
 
 configure_file(gresource.xml.in ${GRESOURCE_FILE})
 
