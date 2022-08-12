@@ -45,6 +45,7 @@ compile_control_resources(
 
 add_library(${LIBRARY_NAME} SHARED
     wifisignalicon.cpp
+    datelabel.cpp
     ${GENERATED_DATA_DIR}/resources_control.c
     )
 
