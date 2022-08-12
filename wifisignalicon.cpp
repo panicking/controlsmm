@@ -40,6 +40,6 @@ namespace components {
             break;
         }
 
-	wifiStrength = strength;
+        wifiStrength = strength;
     }
 }
