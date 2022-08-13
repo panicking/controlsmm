@@ -13,6 +13,12 @@ namespace components {
 
   class wifiSignalIcon : public Gtk::Image {
     public:
+
+    static void ensure_type()
+    {
+        static_cast<void>(wifiSignalIcon());
+    }
+
     wifiSignalIcon();
     wifiSignalIcon(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& refGlade);
     virtual ~wifiSignalIcon() {};

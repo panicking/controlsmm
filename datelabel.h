@@ -9,6 +9,12 @@ namespace components {
 
   class dateLabel : public Gtk::Label {
     public:
+
+    static void ensure_type()
+    {
+        static_cast<void>(dateLabel());
+    }
+
     dateLabel();
     dateLabel(BaseObjectType* cobject, const Glib::RefPtr<Gtk::Builder>& refGlade);
     virtual ~dateLabel();
