@@ -19,7 +19,7 @@ namespace components {
 
     void wifiSignalIcon::set_wifi_signal_level(int strength)
     {
-        strength = std::clamp<int>(strength, WifiLevel::LOW_SIGNAL, 0);
+        strength = std::clamp<int>(strength, 0, WifiLevel::HIGH_SIGNAL);
 
         switch (strength)
         {
